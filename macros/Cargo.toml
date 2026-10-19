@@ -1,0 +1,17 @@
+[package]
+name = "calory-cat-protocal-macros"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[lib]
+proc-macro = true
+# examples in docs don't run without a running database, etc.
+doctest = false
+
+[package.metadata.gerust]
+generated_with = "0.0.7 (e2ef6425b7f373ac60d637428408baeca689e767)"
+
+[dependencies]
+quote = "1.0"
+syn = {  version = "3.0", features = ["full"] }

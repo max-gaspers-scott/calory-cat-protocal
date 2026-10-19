@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: "postgres"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: calory_cat_protocal
+      POSTGRES_USER: calory_cat_protocal
+      POSTGRES_DB: calory_cat_protocal
+    ports:
+      - 5432:5432
+  postgres_test:
+    image: "postgres"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: calory_cat_protocal_test
+      POSTGRES_USER: calory_cat_protocal_test
+      POSTGRES_DB: calory_cat_protocal_test
+    ports:
+      - 5433:5432
